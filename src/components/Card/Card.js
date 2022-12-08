@@ -1,6 +1,5 @@
 import classes from './Card.module.css';
 import React from 'react';
-import MealItemForm from '../Form/MealItemForm';
 
 const Card = (props) => {
   return (

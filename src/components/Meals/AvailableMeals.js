@@ -30,13 +30,14 @@ const SAMPLE_MEALS = [
   },
 ];
 
-const AvailableMeals = () => {
+const AvailableMeals = (props) => {
   const mealsList = SAMPLE_MEALS.map((meal) => (
     <MealItem
       key={meal.id}
       name={meal.name}
       description={meal.description}
       price={meal.price}
+      orderHandler={props.orderHandler}
     />
   ));
 
