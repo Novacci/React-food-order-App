@@ -8,7 +8,10 @@ const Header = (props) => {
     <div>
       <header className={classes.header}>
         <h1>ReactMeals</h1>
-        <HeaderCartButton order={props.order} />
+        <HeaderCartButton
+          showCartHandler={props.showCartHandler}
+          order={props.order}
+        />
       </header>
       <div className={classes['main-image']}>
         <img src={meals} alt="Table with food" />
